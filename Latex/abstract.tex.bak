@@ -1,0 +1,11 @@
+\chapter*{Abstract}
+
+\par{
+The following work is a reproduction of the steps used to build a fully functional web service in a eHealth environment as a web of things. The final product is composed of two parts: a client and a server application.}
+\par{The server is used to store and manipulate data that caregiver in a medical facility have to work with on a daily basis. It is designed towards accessibility and openness and allows access by any internet capable device, providing that the user is authenticated. }
+\par{The client on the other hand is designed to facilitate daily work by presenting the stored data in a practical manner. Adding, modifying and removing data must be as intuitive as possible. }
+
+% and keywords...
+
+\vspace*{1cm}
+\textbf{Keywords:} eHealth,Web of things, RESTful

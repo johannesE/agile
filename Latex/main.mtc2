@@ -1,0 +1,20 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}The Story of HTTP}{\reset@font\mtcSfont 4}{section.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.1}HTTP 0.7 and HTML}{\reset@font\mtcSSfont 4}{subsection.2.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.2}HTTP into detail}{\reset@font\mtcSSfont 5}{subsection.2.1.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode HTTP Header}{\reset@font\mtcSSSfont 5}{section*.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode HTTP Methods or Verbs}{\reset@font\mtcSSSfont 6}{section*.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode HTTP Status Codes}{\reset@font\mtcSSSfont 6}{section*.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}REST}{\reset@font\mtcSfont 7}{section.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}The invention of REST}{\reset@font\mtcSSfont 7}{subsection.2.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}REST and RESTful}{\reset@font\mtcSSfont 7}{subsection.2.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.3}REST by Fielding: Architectural style based on constrains}{\reset@font\mtcSSfont 7}{subsection.2.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode 1. Client-Server Architectural Style}{\reset@font\mtcSSSfont 7}{section*.8}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode 2. Stateless: Restriction to server-client interaction}{\reset@font\mtcSSSfont 7}{section*.9}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode 3. Cache}{\reset@font\mtcSSSfont 8}{section*.10}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode 4. Uniform Interface}{\reset@font\mtcSSSfont 8}{section*.11}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode 5. Layered System}{\reset@font\mtcSSSfont 8}{section*.12}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode (6.) Code-On-Demand}{\reset@font\mtcSSSfont 8}{section*.13}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.4}REST by Fielding: Definition of Resources and their representation}{\reset@font\mtcSSfont 9}{subsection.2.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.5}REST by Fielding: Conclusion}{\reset@font\mtcSSfont 9}{subsection.2.2.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.6}RESTful by Richardson and Ruby}{\reset@font\mtcSSfont 9}{subsection.2.2.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}From Web 1.0 to the web of things}{\reset@font\mtcSfont 10}{section.2.3}}

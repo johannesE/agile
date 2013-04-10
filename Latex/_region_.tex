@@ -1,0 +1,206 @@
+\message{ !name(main.tex)}\documentclass[12pt,a4paper,english,titlepage,oneside]{scrbook}
+% ***** BEGIN OF THE LATEX PREAMBLE *****
+
+\usepackage{softeng}
+
+% Here we define the title of the current thesis in an appropriate variable.
+\newcommand{\worktitle}{A WoT Approach to eHealth}
+% Here we can define a subtitle for the work. If there is no subtitle let this variable empty.
+%\newcommand{\worksubtitle}{}
+% otherwise you can set any subtitle you want, event long ones by breaking the lines manually:
+\newcommand{\worksubtitle}{A RESTFull Web Service described in WADL \\
+							and implented in Java and SQL}
+			   
+% This is the name of the author
+\newcommand{\theauthor}{Mathieu Jean-Daniel}
+
+% This command defines the type of the work: Master Thesis / Bachelor Thesis
+\newcommand{\worktype}{Bachelor Thesis}
+
+% Date of the end (submission) of the work.
+\newcommand{\workdateyear}{2013}
+\newcommand{\workdatemonth}{February}
+
+% English: Thesis supervisors
+% French: Supervisé par
+% German: Unter der Aufssicht von
+\newcommand{\supervisorslabel}{Thesis supervisors}
+
+\newcommand{\worksupervisors}{
+    Prof. Dr. Jacques \textsc{Pasquier-Rocha}\\
+    and\\
+    Andreas \textsc{Ruppen}\\
+    Software Engineering Group\\
+    
+    % if there are other supervisor from other organisations, add them like this
+    % \vspace{0.2cm}
+    % Dr. Olivier \textsc{Liechti}\\
+    % Sun Microsystems Inc.\\
+}
+
+% Set the titlepage footer according to the language of you report (E nglish, F rancais or D eutsch)
+\newcommand{\titlepagefooter}{\titlepagefooterE}
+%\newcommand{\titlepagefooter}{\titlepagefooterD}
+%\newcommand{\titlepagefooter}{\titlepagefooterF}
+
+
+% Here you define the labels of figures, tables, listings...
+% English: Figure, Table, Listing (default)
+% German: Abbildung, Tabelle, Listing
+% French: Figure, Table, Listing
+%\renewcommand{\figurename}{Figure}
+%\renewcommand{\tablename}{Table}
+%\renewcommand{\lstlistingname}{Code extract} % default = Listing
+
+
+
+% If you are still working on a draft version, this command prints a little slight note on the top left corner of each page.
+% Comment this line when you have a final version.
+\reviewtimetoday{\today}{* Draft Version *}
+
+% Let us set the path where all the figures have to be.
+\graphicspath{{./figures/}}
+
+% The following command avoids the indentation of the first sentence of each paragraph.
+\parindent=0in
+
+% The following command sets the header and footer style of the pages.
+\pagestyle{fancy}
+
+% The web resources are references in a bibliography apart.
+\newcites{web}{Referenced Web Ressources}
+
+% It is not mandatory (but suitable) to make an index. If you do not build an index: comment the line below!
+% building the idx index file. This file is then to be compiled with %
+% makeindex in the command line %
+\usepackage{makeidx} \makeindex
+
+% XML LstListing language settings
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  columns=fullflexible,
+  showstringspaces=false,
+  commentstyle=\color{gray}\upshape
+}
+
+\lstdefinelanguage{XML}
+{
+  morestring=[b]",
+  morestring=[s]{>}{<},
+  morecomment=[s]{<?}{?>},
+  stringstyle=\color{black},
+  identifierstyle=\color{darkblue},
+  keywordstyle=\color{cyan},
+  morekeywords={xmlns,version,type}% list your attributes here
+}
+
+
+% ***** END OF THE LATEX PREAMBLE *****
+
+% ***** BEGIN OF THE DOCUMENT *****
+% ----- BEGIN OF THE FRONT STUFF -----
+\begin{document}
+
+\message{ !name(main.tex) !offset(-108) }
+\documentclass[12pt,a4paper,english,titlepage,oneside]{scrbook}
+% ***** BEGIN OF THE LATEX PREAMBLE *****
+
+\usepackage{softeng}
+
+% Here we define the title of the current thesis in an appropriate variable.
+\newcommand{\worktitle}{A WoT Approach to eHealth}
+% Here we can define a subtitle for the work. If there is no subtitle let this variable empty.
+%\newcommand{\worksubtitle}{}
+% otherwise you can set any subtitle you want, event long ones by breaking the lines manually:
+\newcommand{\worksubtitle}{A RESTFull Web Service described in WADL \\
+							and implented in Java and SQL}
+			   
+% This is the name of the author
+\newcommand{\theauthor}{Mathieu Jean-Daniel}
+
+% This command defines the type of the work: Master Thesis / Bachelor Thesis
+\newcommand{\worktype}{Bachelor Thesis}
+
+% Date of the end (submission) of the work.
+\newcommand{\workdateyear}{2013}
+\newcommand{\workdatemonth}{February}
+
+% English: Thesis supervisors
+% French: Supervisé par
+% German: Unter der Aufssicht von
+\newcommand{\supervisorslabel}{Thesis supervisors}
+
+\newcommand{\worksupervisors}{
+    Prof. Dr. Jacques \textsc{Pasquier-Rocha}\\
+    and\\
+    Andreas \textsc{Ruppen}\\
+    Software Engineering Group\\
+    
+    % if there are other supervisor from other organisations, add them like this
+    % \vspace{0.2cm}
+    % Dr. Olivier \textsc{Liechti}\\
+    % Sun Microsystems Inc.\\
+}
+
+% Set the titlepage footer according to the language of you report (E nglish, F rancais or D eutsch)
+\newcommand{\titlepagefooter}{\titlepagefooterE}
+%\newcommand{\titlepagefooter}{\titlepagefooterD}
+%\newcommand{\titlepagefooter}{\titlepagefooterF}
+
+
+% Here you define the labels of figures, tables, listings...
+% English: Figure, Table, Listing (default)
+% German: Abbildung, Tabelle, Listing
+% French: Figure, Table, Listing
+%\renewcommand{\figurename}{Figure}
+%\renewcommand{\tablename}{Table}
+%\renewcommand{\lstlistingname}{Code extract} % default = Listing
+
+
+
+% If you are still working on a draft version, this command prints a little slight note on the top left corner of each page.
+% Comment this line when you have a final version.
+\reviewtimetoday{\today}{* Draft Version *}
+
+% Let us set the path where all the figures have to be.
+\graphicspath{{./figures/}}
+
+% The following command avoids the indentation of the first sentence of each paragraph.
+\parindent=0in
+
+% The following command sets the header and footer style of the pages.
+\pagestyle{fancy}
+
+% The web resources are references in a bibliography apart.
+\newcites{web}{Referenced Web Ressources}
+
+% It is not mandatory (but suitable) to make an index. If you do not build an index: comment the line below!
+% building the idx index file. This file is then to be compiled with %
+% makeindex in the command line %
+\usepackage{makeidx} \makeindex
+
+% XML LstListing language settings
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  columns=fullflexible,
+  showstringspaces=false,
+  commentstyle=\color{gray}\upshape
+}
+
+\lstdefinelanguage{XML}
+{
+  morestring=[b]",
+  morestring=[s]{>}{<},
+
+\message{ !name(main.tex) !offset(4) }
+
+\end{document}
+% ***** END OF THE DOCUMENT *****

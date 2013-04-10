@@ -36,7 +36,7 @@
 \usepackage{fancyheadings}
 \usepackage{minitoc}
 \usepackage{patchapter}
-\usepackage{eurosym}
+%\usepackage{eurosym}
 \usepackage{tabularx}
 \usepackage{multibib}
 \usepackage{layout}

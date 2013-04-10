@@ -1,0 +1,13 @@
+|-- api
+|   |-- javadoc_myapplication   	//API of the application.
+|   `-- javadoc_framework
+|-- bachelor_thesis			//Binaries (pdf, ps, etc.) and 
+|   |-- appendix			//sources of this document
+|   |-- codes				//and of the presentation.
+|   |-- figures				//Sources of the figures.
+|   `-- chapters
+|       |-- introduction
+|       `-- chapter1
+|-- software				//this work.
+    |-- Java
+    `-- Eclipse

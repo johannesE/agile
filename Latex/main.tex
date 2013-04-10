@@ -1,0 +1,205 @@
+\documentclass[12pt,a4paper,english,titlepage,oneside]{scrbook}
+% ***** BEGIN OF THE LATEX PREAMBLE *****
+
+\usepackage{softeng,tabularx}
+\usepackage[table]{xcolor}
+\usepackage{amssymb,wasysym}
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{lightblue}{RGB}{190,190,220}
+\definecolor{lightgreen}{RGB}{190,220,220}
+\definecolor{lightred}{RGB}{220,190,190}
+\definecolor{heavyred}{RGB}{220,140,140}
+
+% Here we define the title of the current thesis in an appropriate variable.
+\newcommand{\worktitle}{A WoT Approach to eHealth}
+% Here we can define a subtitle for the work. If there is no subtitle let this variable empty.
+%\newcommand{\worksubtitle}{}
+% otherwise you can set any subtitle you want, event long ones by breaking the lines manually:
+\newcommand{\worksubtitle}{RESTfull webservice in java}
+			   
+% This is the name of the author
+\newcommand{\theauthor}{Mathieu Jean-Daniel}
+
+% This command defines the type of the work: Master Thesis / Bachelor Thesis
+\newcommand{\worktype}{Bachelor Thesis}
+
+% Date of the end (submission) of the work.
+\newcommand{\workdateyear}{2013}
+\newcommand{\workdatemonth}{Mars}
+
+% English: Thesis supervisors
+% French: Supervisé par
+% German: Unter der Aufssicht von
+\newcommand{\supervisorslabel}{Thesis supervisors}
+
+\newcommand{\worksupervisors}{
+    Prof. Dr. Jacques \textsc{Pasquier-Rocha}\\
+    and\\
+    Andreas \textsc{Ruppen}\\
+    Software Engineering Group\\
+    
+    % if there are other supervisor from other organisations, add them like this
+    % \vspace{0.2cm}
+    % Dr. Olivier \textsc{Liechti}\\
+    % Sun Microsystems Inc.\\
+}
+
+% Set the titlepage footer according to the language of you report (E nglish, F rancais or D eutsch)
+\newcommand{\titlepagefooter}{\titlepagefooterE}
+%\newcommand{\titlepagefooter}{\titlepagefooterD}
+%\newcommand{\titlepagefooter}{\titlepagefooterF}
+
+
+% Here you define the labels of figures, tables, listings...
+% English: Figure, Table, Listing (default)
+% German: Abbildung, Tabelle, Listing
+% French: Figure, Table, Listing
+\renewcommand{\figurename}{Figure}
+\renewcommand{\tablename}{Table}
+\renewcommand{\lstlistingname}{Code extract} % default = Listing
+
+
+
+% If you are still working on a draft version, this command prints a little slight note on the top left corner of each page.
+% Comment this line when you have a final version.
+\reviewtimetoday{\today}{* Draft Version *}
+
+% Let us set the path where all the figures have to be.
+\graphicspath{{./figures/}}
+
+% The following command avoids the indentation of the first sentence of each paragraph.
+\parindent=0in
+
+% The following command sets the header and footer style of the pages.
+\pagestyle{fancy}
+
+% The web resources are references in a bibliography apart.
+%\newcites{web}{Referenced Web Ressources}
+
+% It is not mandatory (but suitable) to make an index. If you do not build an index: comment the line below!
+% building the idx index file. This file is then to be compiled with %
+% makeindex in the command line %
+\usepackage{makeidx} \makeindex
+
+% XML LstListing language settings
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  columns=fullflexible,
+  showstringspaces=false,
+  commentstyle=\color{gray}\upshape
+}
+
+\lstdefinelanguage{XML}
+{
+  morestring=[b]",
+  morestring=[s]{>}{<},
+  morecomment=[s]{<?}{?>},
+  stringstyle=\color{black},
+  identifierstyle=\color{darkblue},
+  keywordstyle=\color{cyan},
+  morekeywords={xmlns,version,type}% list your attributes here
+}
+
+
+% ***** END OF THE LATEX PREAMBLE *****
+
+% ***** BEGIN OF THE DOCUMENT *****
+% ----- BEGIN OF THE FRONT STUFF -----
+\begin{document}
+% This line generates mini table of contents (tocs) at the beginning of each chapter, [e] for empty title.
+\dominitoc[e] 
+\pagestyle{empty}
+
+% Here we include the titlepage.
+\include{titlepage}
+
+% The first pages are numbered in roman style.
+\pagenumbering{roman}
+
+% You can set a quote or thought or dedication or whatever you want on this page.
+% If you do not want to, simply comment the the three lines below!
+%\include{firstquote}
+
+% If there is a diule/acknowledgements you can insert it here
+%\include{preamble}
+
+\pagestyle{headings} 
+
+% Now we include the abstract of you work.
+%\include{abstract}
+
+% In order to have all references in your bibtex files figuring in the bibliorgraphy you can uncomment following lines.
+% Otherwise, only the cited references will appear in your bibliography.
+\nocite{*}
+%\nociteweb{*}
+
+\begin{spacing}{1.2}  % Environment for 1.2 line spacing for contents and lists
+
+% Here comes the table of contents
+% Setting the name of the table of contents
+\renewcommand{\contentsname}{Table of Contents}  % Original name = Contents
+\tableofcontents    % table of contents (.toc file) -- to rename title \renewcommand{\contentsname}{Table of Contents}
+
+% Here comes the list of figures
+\listoffigures    % list of figures   (.lof file) -- to rename title \renewcommand{\listfigurename}{Figures}
+
+% Here comes the list of tables
+\listoftables    % list of tables    (.lot file) -- to rename title \renewcommand{\listtablename}{Tables}
+
+% Here comes the list of listings/code extracts
+% Setting the name of the table of listings
+\renewcommand{\lstlistlistingname}{List of Code extracts}  % Original name = Listings
+\lstlistoflistings    % list of listings    (.lol file) -- to rename title \renewcommand{\listtablename}{Tables}
+
+\end{spacing}  % Environment for 1.2 line spacing for contents and lists
+
+% ----- END OF THE FRONT STUFF -----
+
+% ----- BEGIN OF THE MAIN BODY OF THE DOCUMENT -----
+
+% Page numbering will now be arabic.
+\pagenumbering{arabic}
+
+\addtolength{\parskip}{0.25\baselineskip} % paragraph spacing
+
+% \include{chapters/introduction}
+
+% \include{chapters/chapter1}
+
+%\include{chapters/chapter2}
+
+%\include{chapters/conclusion}
+
+% ----- END OF THE MAIN BODY OF THE DOCUMENT -----
+
+% ----- BEGIN OF THE APPENDICES -----
+\appendix
+
+% First we enumerate the most often used acronyms
+%\include{appendix/acronyms}
+
+% Here we include the licence of the paper. It is always the GNU Free Documentation License.
+%\include{appendix/licence}
+
+% This appendix gives the URL of the official web page of the present project
+%\include{appendix/website}
+
+% This appendix contains the CDROM and briefly describes its content
+%\include{appendix/cdrom}
+
+% The bibliography comes here, in alpha style.
+% The title of bibliography is changed. Force it to be "References" instead of "Bibliography".
+\renewcommand{\bibname}{References}
+\bibliographystyle{plain}
+\bibliography{../Readings/mainbib}
+
+% The index is inserted here.
+\printindex
+% ----- END OF THE APPENDICES -----
+
+\end{document}
+% ***** END OF THE DOCUMENT *****

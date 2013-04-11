@@ -8,3 +8,11 @@ pages={26-32},
 keywords={management of change;product development;software development management;systems analysis;Scrum software development process;changing requirements;product development life-cycle;shifting business demands;small software development teams;software process diversity;Business communication;Chaos;Chaotic communication;Collaborative software;Communication system software;Companies;Niobium compounds;Product development;Programming;Systems engineering and theory},
 doi={10.1109/52.854065},
 ISSN={0740-7459},}
+
+@inproceedings{turk2002limitations,
+  title={Limitations of agile software processes},
+  author={Turk, Dan and France, Robert and Rumpe, Bernhard},
+  booktitle={Third International Conference on eXtreme Programming and Agile Processes in Software Engineering (XP 2002)},
+  pages={43--46},
+  year={2002}
+}
